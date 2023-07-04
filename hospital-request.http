@@ -1,0 +1,60 @@
+### Create a doctor
+POST http://localhost:9090/hospital/doctors
+Content-Type: application/json
+
+{
+    "id": 6,
+    "name": "Dr. House",
+    "specialty": "Neurologist",
+    "phoneNumber": "1234567890"
+}
+
+### Create a patient
+POST http://localhost:9090/hospital/patients
+Content-Type: application/json
+
+{
+    "id": 6,
+    "name": "John Doe",
+    "age": 30,
+    "phoneNumber": "0771690000",
+    "gender": "MALE",
+    "address": "123, Main Street, Colombo 05"
+}
+
+### Create an appointment
+POST http://localhost:9090/hospital/appointment
+Content-Type: application/json
+
+{
+    "id": 11,
+    "patientId": 1,
+    "doctorId": 1,
+    "time": {
+        "year": 2023,
+        "month": 07,
+        "day": 01,
+        "hour": 10,
+        "minute": 30
+    },
+    "reason": "Fever"
+}
+
+### Get all appointments for doctor 01 on 2023-07-01
+GET http://localhost:9090/hospital/doctors/1/appointments?year=2023&month=07&day=01
+
+### Get all doctors with specialty
+GET http://localhost:9090/hospital/doctors
+
+### Get patient details by id
+GET http://localhost:9090/hospital/patients/1
+
+### Update the status of the appointment
+PATCH  http://localhost:9090/hospital/appointments/11
+Content-Type: application/json
+
+"STARTED"
+
+### Delete an appointment
+DELETE http://localhost:9090/hospital/patients/1/appointments?year=2023&month=07&day=01
+
