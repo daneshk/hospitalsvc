@@ -2,7 +2,7 @@
 org = "danesh"
 name = "hospitalsvc"
 version = "0.1.0"
-distribution = "2201.6.0"
+distribution = "2201.7.0"
 
 [build-options]
 observabilityIncluded = true
@@ -14,5 +14,5 @@ module = "hospitalsvc.db"
 [[platform.java11.dependency]]
 groupId = "io.ballerina.stdlib"
 artifactId = "persist.sql-native"
-version = "1.0.0"
+version = "1.1.0"
 

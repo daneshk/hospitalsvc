@@ -15,13 +15,13 @@ INSERT INTO `Patient`(id, name, phoneNumber, age, address, gender) VALUES (4, 'S
 INSERT INTO `Patient`(id, name, phoneNumber, age, address, gender) VALUES (5, 'Saman Kumara', '+94772802233', 40, 'No 345, High level Road, Maharagama', 'MALE');
 
 -- Add Appointment data to the database for demonstration purposes
-INSERT INTO `Appointment`(id, patientId, doctorId, appointmentTime, status, reason) VALUES (1, 1, 1, '2021-05-01 10:00:00', 'SCHEDULED', 'Heart pain');
-INSERT INTO `Appointment`(id, patientId, doctorId, appointmentTime, status, reason) VALUES (2, 2, 2, '2021-05-01 11:00:00', 'SCHEDULED', 'Headache');
-INSERT INTO `Appointment`(id, patientId, doctorId, appointmentTime, status, reason) VALUES (3, 3, 3, '2021-05-01 12:00:00', 'SCHEDULED', 'Fever');
-INSERT INTO `Appointment`(id, patientId, doctorId, appointmentTime, status, reason) VALUES (4, 4, 4, '2021-05-01 13:00:00', 'SCHEDULED', 'Ear pain');
+INSERT INTO `Appointment`(id, patientId, doctorId, appointmentTime, status, reason) VALUES (1, 1, 1, '2021-05-01 10:00:00', 'ENDED', 'Heart pain');
+INSERT INTO `Appointment`(id, patientId, doctorId, appointmentTime, status, reason) VALUES (2, 2, 2, '2021-05-01 11:00:00', 'ENDED', 'Headache');
+INSERT INTO `Appointment`(id, patientId, doctorId, appointmentTime, status, reason) VALUES (3, 3, 3, '2021-07-02 12:00:00', 'SCHEDULED', 'Fever');
+INSERT INTO `Appointment`(id, patientId, doctorId, appointmentTime, status, reason) VALUES (4, 4, 4, '2021-05-01 13:00:00', 'ENDED', 'Ear pain');
 INSERT INTO `Appointment`(id, patientId, doctorId, appointmentTime, status, reason) VALUES (5, 5, 5, '2021-05-01 14:00:00', 'SCHEDULED', 'Stomach pain');
-INSERT INTO `Appointment`(id, patientId, doctorId, appointmentTime, status, reason) VALUES (6, 2, 1, '2021-05-01 15:00:00', 'SCHEDULED', 'Heart pain');
-INSERT INTO `Appointment`(id, patientId, doctorId, appointmentTime, status, reason) VALUES (7, 3, 2, '2021-05-01 16:00:00', 'SCHEDULED', 'Headache');
-INSERT INTO `Appointment`(id, patientId, doctorId, appointmentTime, status, reason) VALUES (8, 4, 1, '2021-05-01 17:00:00', 'SCHEDULED', 'Fever');
-INSERT INTO `Appointment`(id, patientId, doctorId, appointmentTime, status, reason) VALUES (9, 5, 2, '2021-05-01 18:00:00', 'SCHEDULED', 'Ear pain');
-INSERT INTO `Appointment`(id, patientId, doctorId, appointmentTime, status, reason) VALUES (10, 1, 3, '2021-05-01 19:00:00', 'SCHEDULED', 'Stomach pain');
+INSERT INTO `Appointment`(id, patientId, doctorId, appointmentTime, status, reason) VALUES (6, 2, 1, '2021-07-01 15:00:00', 'STARTED', 'Heart pain');
+INSERT INTO `Appointment`(id, patientId, doctorId, appointmentTime, status, reason) VALUES (7, 3, 2, '2021-05-01 16:00:00', 'ENDED', 'Headache');
+INSERT INTO `Appointment`(id, patientId, doctorId, appointmentTime, status, reason) VALUES (8, 4, 1, '2021-07-01 17:00:00', 'SCHEDULED', 'Fever');
+INSERT INTO `Appointment`(id, patientId, doctorId, appointmentTime, status, reason) VALUES (9, 5, 2, '2021-05-01 18:00:00', 'ENDED', 'Ear pain');
+INSERT INTO `Appointment`(id, patientId, doctorId, appointmentTime, status, reason) VALUES (10, 1, 3, '2021-07-01 19:00:00', 'STARTED', 'Stomach pain');

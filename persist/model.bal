@@ -4,12 +4,11 @@ import ballerina/persist as _;
 type Patient record {|
     readonly int id;
     string name;
-    string phoneNumber;
     int age;
     string address;
+    string phoneNumber;
     Gender gender;
 	Appointment[] appointment;
-	// ClinicalData[] clinicaldata;
 |};
 
 enum Gender {
@@ -17,39 +16,21 @@ enum Gender {
     FEMALE
 }
 
-// enum MedicalRecordType {
-//     BLOOD_PRESSURE,
-//     BLOOD_SUGAR,
-//     CHOLESTEROL,
-//     HEART_RATE,
-//     TEMPERATURE
-// };
-
-// type ClinicalData record {|
-//     readonly int id;
-//     Patient patient;
-//     MedicalRecordType recordType;
-//     float value;
-//     time:Civil recordTime;
-//     Doctor doctor;
-// |};
-
 type Doctor record {|
     readonly int id;
     string name;
-    string phoneNumber;
     string specialty;
+    string phoneNumber;
 	Appointment[] appointment;
-	// ClinicalData[] clinicaldata;
 |};
 
 type Appointment record {|
     readonly int id;
-    time:Civil appointmentTime;
-    AppointmentStatus status;
-    string reason;
     Patient patient;
     Doctor doctor;
+    string reason;
+    time:Civil appointmentTime;
+    AppointmentStatus status;
 |};
 
 enum AppointmentStatus {

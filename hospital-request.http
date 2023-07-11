@@ -23,20 +23,21 @@ Content-Type: application/json
 }
 
 ### Create an appointment
-POST http://localhost:9090/hospital/appointment
+POST http://localhost:9090/hospital/appointments
 Content-Type: application/json
 
 {
     "id": 11,
     "patientId": 1,
     "doctorId": 1,
-    "time": {
+    "appointmentTime": {
         "year": 2023,
         "month": 07,
         "day": 01,
         "hour": 10,
         "minute": 30
     },
+    "status": "SCHEDULED",
     "reason": "Fever"
 }
 
